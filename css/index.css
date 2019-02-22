@@ -263,6 +263,9 @@ footer {
   padding: 10px 2%;
   font-size: 2rem;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #f6f6f6;

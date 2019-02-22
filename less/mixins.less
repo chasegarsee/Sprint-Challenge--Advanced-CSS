@@ -1,20 +1,5 @@
 // Mixins Here
 
-// .custom-button(@width: 200px, @bg-color:black, @font-color: white) {
-//     background-color: @bg-color;
-//     color: @font-color;
-//     margin: 10px 30px 20px;
-//     cursor: pointer;
-//     padding: 10px 5%;
-//     width: @width;
-//     font-size: 2rem;
-//     border-radius: 10px;
-
-//     &:hover {
-//       background-color: @font-color;
-//       color: @bg-color;
-//     }
-
 .push-me() {
   background-color: @ebony-clay;
   color: @wild-sand;
@@ -29,4 +14,16 @@
     background-color: @wild-sand;
     color: @ebony-clay;
   }
+}
+
+.centered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
 }
