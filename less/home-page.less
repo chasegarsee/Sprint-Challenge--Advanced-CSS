@@ -98,4 +98,45 @@
       }
     }
   }
+
+  @media @phone {
+    .walk {
+      margin: 10px auto;
+      border-top: 1px solid @main-border-color;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .walk-text {
+        width: 87%;
+
+        h3 {
+          margin: 10px 0;
+        }
+
+        p {
+          margin-bottom: 26px;
+        }
+
+        .btn {
+          .push-me-mobile();
+          .custom-layout(center, center);
+        }
+      }
+
+      .walk-img {
+        width: 87%;
+        margin-left: 0;
+        order: -1;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 } // home
