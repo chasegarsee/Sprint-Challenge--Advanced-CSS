@@ -198,6 +198,45 @@ p {
   font-size: 1.6rem;
   color: black;
 }
+@media ( max-width: 500px ) {
+  .nav-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .nav-section header {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .nav-section header .space-walkers-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 3.5rem;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  .nav-section header nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 20px 0;
+    justify-content: space-evenly;
+  }
+  .nav-section header nav a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+  }
+}
 footer {
   color: #22283b;
   background: #f4f4f4;
@@ -228,6 +267,26 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media ( max-width: 500px ) {
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .home .space-images img {
+    width: 87%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
